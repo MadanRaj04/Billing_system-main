@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "billingsys-3facc",
+  "private_key_id": "d99fff842433d3cff73280fad74d01297f3dd6c2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCKQak/LyYi8GqH\nP31KtZoJs8bfxhrtli7b0ZM56vYESIxi8G5kVYeq8+cq0yr4vGmAqi41Wa53oP9A\nWiFslnWM+SRPsgo+BAoR+tQI5+B4rKmv9jgzSt2/ZWRyLD5tsvFpRXmwdJVItdFT\nkWxpjTjshwePpXJk39QFG4rWBsPR1LeaJ1qXQNJKtb91kP2bwDbAr5FzEyU/v8we\nTGG1AnRC+PVqhKDCII3bA4tWWn8MbuhQ7cU4KRHxM0NqoB6LgaLniFZF7FaJ3QRe\nOudIXhOfBvlz+U/Z30x9bVqZNRfLYpUKlCRwlo65ieTG4bFNh/6PyXGLo9vdWxUS\nkV82qJh9AgMBAAECggEACXPyWg/Y9sLDNzKb2DJrpmCsnGsQ4cWRjXWPmwI/O8KT\nGLEG4eTS2m6D6SgYNCVmaEXv1ArTnznP4gBCRfNRSmgpd6p9Fp7o6lr2SZKYb4p3\nWADeIwGqK4vc7uKACo5AK89fLIsCvv6GzK+GKamz0UDtPyt+fg+rZoWq0TXpXcy+\nCThXK5PE422eJ1iRVc8K0H4l5LukU7CHsfXnNg1Fd2UMYhvOXGGBnXY8UC/SgEY/\nJpcymWH8ZTJ9iL6eRr4JotXJ4N6ed6/58F9NG9aQTtPhZAQhZv/48PuUDG2fzzUb\nBzxnC38Yqug8CAq+tTTnW+0Jo+Z4AzEB+GYLlKRaCQKBgQC9KQLB8PSI/wv+flhC\n5CK6fHx5agbOMFtiU3wIo2tadj3YZy7x5Ya4pTeVskIFySDYa1h/jgmYU2PAQdgP\nGJDaD3+qnf+riAH5rOoxENcHuB3Pj9/fIMDCX++b9qceaishCLye+QMq/o3K7QJl\nPTVY5oZGmoE+o3XFY7hEL0NRdQKBgQC7HAUSJzty6LsJOXPZirPqqS5ajp5tAhRO\nwp1bqn5H8B0BiJKjlPiEunpk0ptel2bybmIAFqX0mZDMM83JW2TkPGwiGoed9YX0\n64caC7BEjvrcoIRKL3p59/vDxFLR/h9pSP0JJVsdkrjv8Z9+84vRP2nq/e0mLfCd\nLpjkLooB6QKBgQCpl0wunx5OeQPC3nm5Nxpfwd5DaKjDUZ2M0TaB9Cn6h8o464Gu\nRE992jq0joYc887r2YoVij3WAOWM6DuShT7RElYunMsteZnzxHCPHv76n7qybdaU\nEKRhYGvNk90PKraSPmgFy1FoyaJMjiO4qqDanItEX5+CjkC3gQkisJEVRQKBgGlT\nFXupf+poHVjM8WykijBuuXwaSg28nOfU3zVJXLpr7Df/w+O3KMm2Gs2ETBdMDJQt\nFJdOKG7uvrZj9tQA0WM0q/3qhyqgmZ5LsoozyC5fedEVvkHwRfZAZIVHjwNMFCx0\n/JLYZ1jXTakrjwesWqkYFCxGcecK9yXTpBbWJ7N5AoGAVnH2+SApjbfINtqpOIG5\nbKs7kqfHf4Na8NR0lu8sU/5eIeqg1H96MrhtyiFlMLNhFGAfG6ixohICuGuiNciU\nmM/TlveMoRzI2bvqiFKtIC5sNmLd3LpZ6uvT2oQU8NKAag4Fq0mgeYM1HTmLazot\nifnkWUppa0KczmE2E2hLtdw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@billingsys-3facc.iam.gserviceaccount.com",
+  "client_id": "113492262319809736701",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40billingsys-3facc.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,15 @@
+	Welcome Webcode Retail
+ Bill Number:9074
+Customer Name:
+Phone Number
+================================
+Products		QTY		Price
+ Bluetooth Module		1		2
+ I2c		11		55
+ Arduino		11		110
+ 555Timer		11		110
+ Electronics Tax			Rs. 2.85
+ Electronics Tax			Rs. 550.0
+ Electronics Tax			Rs. 11.0
+ Total Bill:			 Rs.840.85
+--------------------------------

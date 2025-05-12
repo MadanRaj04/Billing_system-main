@@ -1,0 +1,30 @@
+	Welcome Webcode Retail
+ Bill Number:3794
+Customer Name:
+Phone Number
+================================
+Products		QTY		Price
+ Bluetooth Module		1		2
+ I2c		1		5
+ ADXL345		1		12
+ DHT11		1		30
+ MQ		1		5
+ PIR		1		15
+ Arduino		1		10
+ Pico		1		10
+ Raspberrypi		1		10
+ NodeMCu		1		6
+ Esp32		1		8
+ Atmega		1		5
+ 555Timer		1		10
+ Atni32		1		10
+ Atmega		1		10
+ Lx6		1		10
+ Hx05		1		10
+ Xtensa		1		10
+--------------------------------
+ Electronics Tax			Rs. 3.45
+ Electronics Tax			Rs. 245.0
+ Electronics Tax			Rs. 6.0
+ Total Bill:			 Rs.432.45
+--------------------------------

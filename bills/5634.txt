@@ -1,0 +1,14 @@
+	Welcome Webcode Retail
+ Bill Number:5634
+Customer Name:
+Phone Number
+================================
+Products		QTY		Price
+ Bluetooth Module		1		2
+ I2c		2		10
+ ADXL345		3		36
+ Electronics Tax			Rs. 2.4
+ Electronics Tax			Rs. 0.0
+ Electronics Tax			Rs. 0.0
+ Total Bill:			 Rs.50.4
+--------------------------------

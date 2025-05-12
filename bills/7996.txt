@@ -1,0 +1,13 @@
+	Welcome Webcode Retail
+ Bill Number:7996
+Customer Name:
+Phone Number
+================================
+Products		QTY		Price
+ Sanitizer		4		8
+ Sanitizer		4		20
+ Medical Tax			Rs. 1.4
+ Grocery Tax			Rs. 0.0
+ Cold Drinks Tax			Rs. 0.0
+ Total Bil:			 Rs.29.4
+--------------------------------

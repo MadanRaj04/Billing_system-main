@@ -1,0 +1,14 @@
+	Welcome Webcode Retail
+ Bill Number:6741
+Customer Name:
+Phone Number
+================================
+Products		QTY		Price
+ Sanitizer		1		2
+ Rice		1		10
+ Sprite		1		10
+ Medical Tax			Rs. 0.1
+ Grocery Tax			Rs. 50.0
+ Cold Drinks Tax			Rs. 1.0
+ Total Bil:			 Rs.73.1
+--------------------------------

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Billing Software</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Billing Software</h1>
+
+    <section class="section">
+      <h2>Customer Details</h2>
+      <input type="text" id="customerName" placeholder="Customer Name" />
+      <input type="text" id="customerPhone" placeholder="Phone Number" />
+      <input type="text" id="billNo" placeholder="Bill Number" />
+    </section>
+
+    <section class="section">
+      <h2>Products - Modules</h2>
+      <label>Bluetooth: <input type="number" id="bluetooth" min="0" value="0" /></label>
+      <label>IR Sensor: <input type="number" id="irSensor" min="0" value="0" /></label>
+      <label>Ultrasonic: <input type="number" id="ultrasonic" min="0" value="0" /></label>
+    </section>
+
+    <section class="section">
+      <h2>Microcontrollers</h2>
+      <label>Arduino: <input type="number" id="arduino" min="0" value="0" /></label>
+      <label>Raspberry Pi: <input type="number" id="raspberry" min="0" value="0" /></label>
+      <label>ESP32: <input type="number" id="esp" min="0" value="0" /></label>
+    </section>
+
+    <section class="section">
+      <h2>ICs</h2>
+      <label>IC 555: <input type="number" id="ic555" min="0" value="0" /></label>
+      <label>IC 741: <input type="number" id="ic741" min="0" value="0" /></label>
+      <label>IC 4017: <input type="number" id="ic4017" min="0" value="0" /></label>
+    </section>
+
+    <div class="buttons">
+      <button onclick="generateBill()">Generate Bill</button>
+      <button onclick="printBill()">Print/Download</button>
+      <button onclick="clearAll()">Clear</button>
+    </div>
+
+    <div class="bill" id="billArea">
+      <h2>Bill Area</h2>
+      <pre id="billText"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
