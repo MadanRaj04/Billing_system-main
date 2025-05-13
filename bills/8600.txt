@@ -1,0 +1,16 @@
+	Welcome Webcode Retail
+ Bill Number:8600
+Customer Name:c1
+Phone Number
+================================
+Products		QTY		Price
+ I2c		1		5
+ ADXL345		1		12
+ DHT11		1		30
+ MQ		1		5
+ PIR		0		15
+ Electronics Tax			Rs. 3.35
+ Electronics Tax			Rs. 0.0
+ Electronics Tax			Rs. 0.0
+ Total Bill:			 Rs.70.35
+--------------------------------

@@ -1,0 +1,12 @@
+	Welcome Webcode Retail
+ Bill Number:5496
+Customer Name:
+Phone Number
+================================
+Products		QTY		Price
+ Bluetooth Module		1		2
+ Electronics Tax			Rs. 0.1
+ Electronics Tax			Rs. 0.0
+ Electronics Tax			Rs. 0.0
+ Total Bill:			 Rs.2.1
+--------------------------------

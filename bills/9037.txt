@@ -1,0 +1,19 @@
+	Welcome Webcode Retail
+ Bill Number:9037
+Customer Name:customer 1
+Phone Number
+================================
+Products		QTY		Price
+ Bluetooth Module		1		2
+ I2c		1		5
+ ADXL345		1		12
+ DHT11		1		30
+ MQ		1		5
+ PIR		1		15
+ NodeMCu		1		6
+ Hx05		1		10
+ Electronics Tax			Rs. 3.45
+ Electronics Tax			Rs. 30.0
+ Electronics Tax			Rs. 1.0
+ Total Bill:			 Rs.119.45
+--------------------------------

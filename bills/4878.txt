@@ -1,0 +1,26 @@
+	Welcome Webcode Retail
+ Bill Number:4878
+Customer Name:Customer 1
+Phone Number1234567890
+================================
+Products		QTY		Price
+ Bluetooth Module		1		2
+ I2c		1		5
+ ADXL345		1		12
+ DHT11		1		30
+ MQ		1		5
+ PIR		1		15
+ Arduino		1		10
+ Raspberrypi		2		20
+ NodeMCu		4		24
+ Esp32		1		8
+ 555Timer		1		10
+ Atni32		2		20
+ Lx6		1		10
+ Xtensa		1		10
+--------------------------------
+ Electronics Tax			Rs. 3.45
+ Electronics Tax			Rs. 310.0
+ Electronics Tax			Rs. 5.0
+ Total Bill:			 Rs.499.45
+--------------------------------

@@ -1,0 +1,12 @@
+	Welcome Webcode Retail
+ Bill Number:2366
+Customer Name:
+Phone Number
+================================
+Products		QTY		Price
+ I2c		1		5
+ Electronics Tax			Rs. 0.25
+ Electronics Tax			Rs. 0.0
+ Electronics Tax			Rs. 0.0
+ Total Bill:			 Rs.5.25
+--------------------------------

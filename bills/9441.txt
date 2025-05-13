@@ -1,0 +1,15 @@
+	Welcome Webcode Retail
+ Bill Number:9441
+Customer Name:c1
+Phone Number
+================================
+Products		QTY		Price
+ ADXL345		1		12
+ DHT11		1		30
+ MQ		1		5
+ PIR		0		15
+ Electronics Tax			Rs. 3.1
+ Electronics Tax			Rs. 0.0
+ Electronics Tax			Rs. 0.0
+ Total Bill:			 Rs.65.1
+--------------------------------

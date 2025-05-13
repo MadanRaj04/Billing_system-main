@@ -1,0 +1,22 @@
+	Welcome Webcode Retail
+ Bill Number:8888
+Customer Name:Customer 1
+Phone Number1234567890
+================================
+Products		QTY		Price
+ Bluetooth Module		1		2
+ I2c		1		5
+ ADXL345		1		12
+ Pico		1		10
+ Raspberrypi		1		10
+ NodeMCu		2		12
+ Esp32		4		32
+ Atni32		5		50
+ Atmega		3		30
+ Lx6		2		20
+ Hx05		0		10
+ Electronics Tax			Rs. 0.95
+ Electronics Tax			Rs. 320.0
+ Electronics Tax			Rs. 11.0
+ Total Bill:			 Rs.524.95
+--------------------------------

@@ -157,7 +157,7 @@ class Bill_App:
         flour_txt = Entry(F3, width=10, textvariable=self.flour, font=('times new roman', 16, 'bold'), bd=5, relief=GROOVE)
         flour_txt.grid(row=4, column=1, padx=10, pady=10)
 
-        maggi_lbl = Label(F3, text="Atmega", font=('times new roman', 16, 'bold'), bg="#badc57", fg="black")
+        maggi_lbl = Label(F3, text="Esp01", font=('times new roman', 16, 'bold'), bg="#badc57", fg="black")
         maggi_lbl.grid(row=5, column=0, padx=10, pady=10, sticky='W')
         maggi_txt = Entry(F3, width=10, textvariable=self.maggi, font=('times new roman', 16, 'bold'), bd=5, relief=GROOVE)
         maggi_txt.grid(row=5, column=1, padx=10, pady=10)
@@ -266,6 +266,10 @@ class Bill_App:
 #================totalBill==========================
 
     def total(self):
+        if not self.check_and_deduct_stock():
+            messagebox.showerror("Billing Halted", "Billing could not continue due to stock errors.")
+            return
+
         self.m_h_g_p = self.hand_gloves.get()*12
         self.m_s_p = self.sanitizer.get()*2
         self.m_m_p = self.mask.get()*5
@@ -383,6 +387,36 @@ class Bill_App:
 
         self.txtarea.insert(END, f"\n Total Bill:\t\t\t Rs.{self.total_bill}")
         self.txtarea.insert(END, f"\n--------------------------------")
+        requested_items = {
+                "Bluetooth Module": self.sanitizer.get(),
+                "I2C": self.mask.get(),
+                "ADXL345": self.hand_gloves.get(),
+                "DHT11": self.dettol.get(),
+                "MQ": self.newsprin.get(),
+                "PIR": self.thermal_gun.get(),
+                "Arduino": self.rice.get(),
+                "Pico": self.food_oil.get(),
+                "Raspberrypi": self.wheat.get(),
+                "Node Mcu": self.daal.get(),
+                "Esp32": self.flour.get(),
+                "Esp01": self.maggi.get(),
+                "555 Timer": self.sprite.get(),
+                "Atni32": self.limka.get(),
+                "Atmega": self.mazza.get(),     
+                "Lx6": self.coke.get(),
+                "Hx05": self.fanta.get(),
+                "Xtensa": self.mountain_duo.get()
+            }
+        
+        stock_ref = db.collection('stock').document('Quantity')
+        stock_data = stock_ref.get().to_dict()
+            # Deduct quantities from stock
+        for item, qty in requested_items.items():
+            if qty > 0:
+                stock_data[item] -= qty
+
+            # Update Firestore stock
+        stock_ref.update(stock_data)
         self.save_bill()
 
     #=========savebill============================
@@ -394,7 +428,42 @@ class Bill_App:
             f1 = open("bills/"+str(self.bill_no.get())+".txt", "w")
             f1.write(self.bill_data)
             f1.close()
-            self.save_to_firestore(self.bill_data)
+            bill_data = {
+            "bill_no": self.bill_no.get(),
+            "customer_name": self.c_name.get(),
+            "customer_phone": self.c_phone.get(),
+            "date": str(datetime.datetime.now()),
+            "items": {
+                "Bluetooth Module": self.sanitizer.get(),
+                "I2C": self.mask.get(),
+                "ADXL345": self.hand_gloves.get(),
+                "DHT11": self.dettol.get(),
+                "MQ": self.newsprin.get(),
+                "PIR": self.thermal_gun.get(),
+                "Arduino": self.rice.get(),
+                "Pico": self.food_oil.get(),
+                "Raspberrypi": self.wheat.get(),
+                "Node Mcu": self.daal.get(),
+                "Esp32": self.flour.get(),
+                "Atmega": self.maggi.get(),
+                "555 Timer": self.sprite.get(),
+                "Atni32": self.limka.get(),
+                "Atmega": self.mazza.get(),
+                "Lx6": self.coke.get(),
+                "Hx05": self.fanta.get(),
+                "Xtensa": self.mountain_duo.get()
+            },
+            "total_Micro_Controller_price": self.medical_price.get(),
+            "total_Module_price": self.grocery_price.get(),
+            "total_IC_price": self.cold_drinks_price.get(),
+            "total_tax": {
+                "MicroController Tax": self.medical_tax.get(),
+                "Module Tax": self.grocery_tax.get(),
+                "IC Tax": self.cold_drinks_tax.get()
+            }
+            }
+            print("working")
+            self.save_to_firestore(bill_data)
 
             messagebox.showinfo("Saved", f"Bill no:{self.bill_no.get()} Saved Successfully")
         else:
@@ -476,11 +545,55 @@ class Bill_App:
     def save_to_firestore(self, data):
         try:
             bill_ref = db.collection('bills').document(self.bill_no.get())
+            print(data)
             bill_ref.set(data)
             messagebox.showinfo("Success", "Bill data saved to Firestore successfully!")
         except Exception as e:
             messagebox.showerror("Firestore Error", f"Failed to save bill: {str(e)}")
 
+
+
+    def check_and_deduct_stock(self):
+        try:
+            stock_ref = db.collection('stock').document('Quantity')
+            stock_data = stock_ref.get().to_dict()
+
+            # Your specific mapping of UI input to Firestore item names
+            requested_items = {
+                "Bluetooth Module": self.sanitizer.get(),
+                "I2C": self.mask.get(),
+                "ADXL345": self.hand_gloves.get(),
+                "DHT11": self.dettol.get(),
+                "MQ": self.newsprin.get(),
+                "PIR": self.thermal_gun.get(),
+                "Arduino": self.rice.get(),
+                "Pico": self.food_oil.get(),
+                "Raspberrypi": self.wheat.get(),
+                "Node Mcu": self.daal.get(),
+                "Esp32": self.flour.get(),
+                "Esp01": self.maggi.get(),
+                "555 Timer": self.sprite.get(),
+                "Atni32": self.limka.get(),
+                "Atmega": self.mazza.get(),     
+                "Lx6": self.coke.get(),
+                "Hx05": self.fanta.get(),
+                "Xtensa": self.mountain_duo.get()
+            }
+
+            # Check if enough stock exists
+            for item, qty in requested_items.items():
+                if qty > 0:
+                    if item not in stock_data:
+                        messagebox.showerror("Stock Error", f"{item} not found in stock.")
+                        return False
+                    if stock_data[item] < qty:
+                        messagebox.showerror("Stock Error", f"Insufficient stock for {item}. Available: {stock_data[item]}")
+                        return False
+            return True
+
+        except Exception as e:
+            messagebox.showerror("Firestore Error", f"Stock update failed: {str(e)}")
+            return False
 
 
 root = Tk()
